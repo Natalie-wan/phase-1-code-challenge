@@ -67,4 +67,4 @@ To run any of these challenges, clone this repository and execute the respective
     cd <repository-directory>
     node <script-name>.js
 
-Copyright (©) — &copy; 2024 Natalie Wanjiku
+Copyright (©) — &copy; 2024 Natalie Wanjiku 
