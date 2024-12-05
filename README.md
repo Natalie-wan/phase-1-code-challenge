@@ -16,7 +16,7 @@ This repository contains three JavaScript challenges.The challenges focus on pra
 - **Show the Result:** Display the grade to the user.
 
 #### Key Steps
-1. Ask the user to enter marks using prompt().
+1. The user should provide a valid input
 2. Check that the marks are between 0 and 100.
 3. Use if-else statements to determine the grade.
 
@@ -34,7 +34,7 @@ This repository contains three JavaScript challenges.The challenges focus on pra
 - **Make a Decision:** If the driver has more than 12 points, show "License suspended."
 
 #### Key Steps
-1. Use prompt() to get the car's speed.
+1. User provides their input(speed).
 2. Check if the speed is below 70 km/h.
 3. Calculate demerit points by dividing the extra speed by 5.
 4. Use if-else to show the right message or decide if the license should be suspended.

@@ -1,26 +1,27 @@
 //Speed detector
 
-function checkSpeed() {
-    let speed = prompt("Enter the speed of the car") //Asks the user to enter the speed of the car
-    speed = parseInt(speed)
+function checkSpeed(speed) {
+    speed = parseInt(speed); //Ensures that the input is treated like a number
 
-    if(isNaN(speed) || speed <0) { //Checks if the speed entered is a number
-        console.log("Please enter a valid speed")
-        return; //exits/stops the function early if the input is not correct
+    if (isNaN(speed) || speed < 0) { //Checks if the speed entered is a number and not a negative
+        console.log("Please enter a valid speed.");
+        return; //Exits the function early if input is invalid
     }
 
-    if(speed <70) {
-        console.log("Ok"); //returns Ok if the speed is below 70 and stops running the code
+    if (speed < 70) {
+        console.log("Ok"); //Returns "Ok" if the speed is below 70
         return;
     }
 
-    const calculatePoints = (speed) => Math.floor(speed -70/5) //function that calculates the demerit points(above the speed limit)
+    //Function that calculates demerit points for speeds above the limit
+    const calculatePoints = (speed) => Math.floor((speed - 70) / 5); 
 
-    let points = calculatePoints(speed) // calculates the demerit points for the given speed and returns total number of demerit points
-    console.log(`Points: ${points}`)
+    let points = calculatePoints(speed); //Calculates demerit points
+    console.log(`Points: ${points}`);
 
-    if (points >12) {
-        console.log("License suspended") //returns License suspended if the points exceed 12 points
-    }    
+    if (points > 12) {
+        console.log("License suspended"); //Suspension of license if points exceed 12
+    }
 }
-checkSpeed(); //calls the function to check the car's speed
+
+checkSpeed(150);
